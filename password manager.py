@@ -21,7 +21,7 @@ i=0
 
 while i<3:
         
-    passwords=["codz324430.hamad"]
+    passwords=[#save a passsword here]
     master_pwd=input("Input a login password: ")
 
     if master_pwd not in passwords[0]:
