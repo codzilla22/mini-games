@@ -1,4 +1,4 @@
-
+#function to view your existing paswords
 def view():
     with open("passwords.txt", "r") as f:
         for line in f.readlines():
@@ -8,7 +8,7 @@ def view():
             print ("Password: " + passw)
             print ("Account: " + acc)
 
-            
+#function to add new paswords            
 def add():
     user_name=input("Account name: ")
     pwd=input("Password: ")
@@ -19,11 +19,13 @@ def add():
 
 i=0
 
+#three chances to type the right password
 while i<3:
         
     passwords=[#save a passsword here]
     master_pwd=input("Input a login password: ")
 
+ #doesn't allow access until the master key is known
     if master_pwd not in passwords[0]:
         print ("Invalid input.Try again: ")
         i=i+1
