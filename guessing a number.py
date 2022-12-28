@@ -10,7 +10,7 @@ top= input("What is your range of numbers: ")
 top=int(top)
 
 if top<=0:
-    print("Please enter a number larger than zero. Thank you")
+    print("Enter a number larger than zero.")
     top= input("What is your range of numbers: ")
     top=int(top)
 
