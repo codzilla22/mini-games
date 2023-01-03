@@ -16,10 +16,7 @@ if top<=0:
 
 else:
     random_number=random.randint(0,top)
-
-
 guesses=0
-
 while True:
     guesses=guesses+1
     user_guess=input("Guess a number: ")
